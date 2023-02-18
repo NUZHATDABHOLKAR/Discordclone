@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Edu+VIC+WA+NT+Beginner&family=Lato:wght@700&family=Montserrat:wght@900&family=PT+Sans&display=swap');
+    </style>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .a1 {
+        margin: 0;
+        padding: 0;
+        background-color: #5865f2;
+      }
+      #hamburger-content {
+			display: none;
+		}
+      .a2 {
+        /* background-color: #5865f2; */
+        background-image: url("./images/23.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width:100%; 
+        background-color: #3c48cf;
+        /* border:2px solid black; */
+        z-index: 55;
+        height:92vh;
+      }
+      .f1{
+        font-family: 'Cormorant SC', serif;
+        font-family: 'Edu VIC WA NT Beginner', cursive;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'PT Sans', sans-serif; 
+      }
+      .a3{
+        margin-top: -100px;
+        margin-bottom: 50px;
+      }
+      .a4{
+        padding-bottom:-120px;
+      }
+     .a5{
+        /* width:300px;
+        height:100px; */
+     }
+     .a6{
+        margin-top:-238px;
+     }
+     .a7{
+        margin-top:-185px;
+        width:350px;
+        height:300px;
+     }
+     .a8{
+       margin-top:-120px;
+     }
+     .a9{
+      background-color: #3c48cf;
+     }
+     .a10{
+      width:25px;
+      height:25px;
+     }
+     .img1{
+      width:100px;
+      height:50px;
+     }
+     
+		
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="a1 flex justify-center lg:flex-row justify-around fixed w-full">
+      <div class="w-40 p-2 ml-2">
+        <img src="./images/a1.png" alt="" />
+      </div>
+      <!-- simple no use of hamburger -->
+      <div class="text-white text-base m-3 font-bold hidden lg:block">
+        <a
+          href="https://discord.com/download"
+          class="ml-4 no-underline hover:underline"
+          >Download</a
+        >
+        <a
+          href="https://discord.com/nitro"
+          class="ml-4 no-underline hover:underline"
+          >Nitro</a
+        >
+        <a
+          href="https://discord.com/servers"
+          class="ml-4 no-underline hover:underline"
+          >Discover</a
+        >
+        <a
+          href="https://discord.com/safetycenter"
+          class="ml-4 no-underline hover:underline"
+          >Safety</a
+        >
+        <a
+          href="https://support.discord.com/hc/en-us"
+          class="ml-4 no-underline hover:underline"
+          >Support</a
+        >
+        <a
+          href="https://discord.com/blog"
+          class="ml-4 no-underline hover:underline"
+          >Blog</a
+        >
+        <a
+          href="https://discord.com/careers"
+          class="ml-4 no-underline hover:underline"
+          >Career</a
+        >
+      </div>
+      <div>
+        <button
+          class="w-40 h-8 bg-white text-black hover:text-blue-700 m-3 rounded-full hidden lg:block"
+        >
+          <a href="https://discord.com/login">Open discord</a>
+        </button>
+      </div>
+      <!-- use of humbarger -->
+     <div class="block md:hidden w-12 p-3">
+       <img onclick="togglecontent()" src="./images/burger-checklist-list-menu-navigation-svgrepo-com.svg" alt="">
+     </div>
+     </div>
+     <div class="block md:hidden a1 fixed w-full mt-10 " id="hamburger-content">
+        <div class="text-white text-base font-bold flex flex-col justify-start ">
+            <a
+              href="https://discord.com/download"
+              class="ml-9 mt-4 no-underline hover:underline"
+              >Download</a
+            >
+            <a
+              href="https://discord.com/nitro"
+              class=" ml-9 no-underline hover:underline"
+              >Nitro</a
+            >
+            <a
+              href="https://discord.com/servers"
+              class="ml-9  no-underline hover:underline"
+              >Discover</a
+            >
+            <a
+              href="https://discord.com/safetycenter"
+              class="ml-9 no-underline hover:underline"
+              >Safety</a
+            >
+            <a
+              href="https://support.discord.com/hc/en-us"
+              class="ml-9 no-underline hover:underline"
+              >Support</a
+            >
+            <a
+              href="https://discord.com/blog"
+              class=" ml-9 no-underline hover:underline"
+              >Blog</a
+            >
+            <a
+              href="https://discord.com/careers"
+              class="ml-9 no-underline hover:underline"
+              >Career</a
+            >
+          </div>
+          <div>
+            <button
+              class=" ml-9 w-40 h-8 bg-white text-black hover:text-blue-700 m-3 rounded-full "
+            >
+              <a href="https://discord.com/login">Open discord</a>
+            </button>
+          </div>
+       </div>
+    </div>
+    <!-- hero seaction --> 
+     <!-- only for large screen -->
+    <div class="a2 hidden lg:block">
+        <div class="p-2 lg:p-40 ">
+        <h1 class="text-white text-3xl p-4  text-center lg:font-bold pt-0 lg:text-7xl">IMAGINE A PLACE...</h1>  
+        <p class="text-white text-xl text-center font-bold  ">...where you can belong to a school club, a gaming group, or a worldwide art community. </p>
+        <p  class="text-white text-xl text-center  font-bold ">Where just you and a handful of friends can spend time together. A place that makes it easy </p>
+        <p  class="text-white text-xl text-center font-bold ">to talk every day and hang out more often.</p>
+        </div>
+        <div class="flex flex-row justify-between ">
+         <div><img class="a6" src="./images/21-removebg-preview.png" alt=""></div>
+         <div class="flex flex-row justify-between">
+            <button class=" a8 bg-white text-black rounded-full flex flex-row w-60 h-12  p-3 hover:text-blue-700">&nbsp;<img  class="w-5 h-5" src="./images/download logo.png" alt="">&nbsp;Download for window</button>
+            <button class="a8 ml-4 bg-black text-white rounded-full w-72 h-12  p-3 hover:bg-gray-700">&nbsp;&nbsp;Open discord in your browser</button>
+         </div>
+         <div><img class="a7" src="./images/22.png" alt=""></div> 
+       </div>
+    </div>
+    <!-- only for mobile screen -->
+    <div class="  a9 block lg:hidden">
+        <h1 class="  text-white font-bold text-2xl pt-14  ml-14">IMAGINE A PLACE...</h1>
+        <p class="text-white ml-14 text-sm">...where you can belong to a school club, a<br> gaming group, or a worldwide art community.<br> Where just you and a handful of friends can <br>spend time together. A place that makes it easy <br>to talk every day and hang out more often.</p>
+        <button class=" ml-12 mt-6  bg-white text-black rounded-full flex flex-row w-60 h-12  p-3 hover:text-blue-700">&nbsp;<img  class="w-5 h-5" src="./images/download logo.png" alt="">&nbsp;Download for window</button>
+        <button class=" ml-12 my-6 bg-black text-white rounded-full w-72 h-12  p-3 hover:bg-gray-700">&nbsp;&nbsp;Open discord in your browser</button>
+        <img src="./images/12.png" alt="">
+      </div>
+    
+      <!-- start second seaction from here -->
+      <div class="flex flex-col lg:flex-row pt-2 pb-2  lg:pt-32 pb-24">
+        <img src="./images/a(1).png" alt="">
+        <div class="p-12 pt-2 lg:pt-14 ">
+          <h1 class="text-xl font-bold ml-3 lg:text-6xl ml-0  ">Create an invite-only place where you belong</h1>
+          <p class="f1  text-xs ml-3 pt-6 lg:text-lg ml-0 ">Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.</p>
+        </div>
+      </div>
+        <!-- start third seaction from here -->
+        <div class="bg-slate-50">
+        <div class="flex flex-col-reverse lg:flex-row pt-2 pt-2 pb-24 lg:pt-32 pb-2">
+          <div class="p-0 pt-2 lg:pt-14 p-12 ">
+            <h1 class="text-xl font-bold ml-6 lg:text-5xl ml-0  ">Where hanging out is easy</h1>
+            <p class="f1  text-xs ml-6 pt-6 lg:text-lg ml-0 ">Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.</p>
+          </div>
+          <img src="./images/a(2).png" alt="">
+        </div>
+      </div>
+      <!-- start forth seaction from here -->
+      <div class="flex flex-col lg:flex-row pt-2 pb-12  lg:pt-32 pb-24">
+        <img src="./images/a(3).png" alt="">
+        <div class="p-12 pt-2 lg:pt-14 ">
+          <h1 class="text-lg font-bold ml-3 lg:text-7xl ml-0  ">From few to a fandom</h1>
+          <p class="f1  text-xs ml-3 pt-6 lg:text-lg ml-0 ">Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.
+          </p>
+        </div>
+      </div>
+   <!--  start fifth seaction from here  -->
+   <div class="bg-slate-50">
+         <h1 class=" text-center text-2xl font-bold pt-2 lg:text-center text-6xl f1 font-bold  pt-2 lg:pt-12">RELIABLE TECH FOR STAYING CLOSE</h1>
+         <p class="px-1 text-lg text--center pt-2 lg:px-32 text-2xl  text-center  pt-6 ">Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</p>
+         <img class="p-4 mx-auto " src="./images/a(5).png" alt="">
+         <div class="p-2  lg:p-32 ">
+         <h3 class="mt-2  lg:mt-12 text-3xl text-center">Ready to start journey ?</h3>
+         <center><button class="my-4 bg-blue-800 text-white rounded-full flex flex-row w-60 h-12  p-3 hover:bg-blue-700">&nbsp;<img  class="w-5 h-5" src="./images/download.svg" alt="">&nbsp;Download for window</button></center>
+        </div>
+   </div>
+   <!-- footer  -->
+   <div class="bg-zinc-800 p-20  hidden lg:block">
+    <div class="flex flex-col lg:flex-row justify-around">
+    <div>
+       <h3 class="text-blue-700 text-xl">IMAGINE A PLACE</h3>
+       <br>
+       <select>
+        <option value="us" >United States  English</option>
+        <option value="ca" >Canada English, French</option>
+        <option value="mx" >Mexico  Spanish</option>
+        <!-- Add more options for other countries here -->
+        </select>
+        <div class="flex flex-row justify-start pt-2">
+            <img src="./images/social media icon/twitter-color-icon.svg" alt="" class="a10"> 
+            <img src="./images/social media icon/black-instagram-icon.svg" alt="" class="a10 ml-4" >
+            <img src="./images/social media icon/facebook-square-icon.svg" alt="" class="a10 ml-4">
+            <img src="./images/social media icon/black-and-white-youtube-icon.svg" alt="" class="a10 ml-4">
+        </div>
+    </div>
+   
+    <div class="flex flex-col">
+    <p class="text-blue-600">Product</p>
+    <a href="https://discord.com/download" class="text-gray-400 no-underline hover:underline">Download</a>
+    <a href="https://discord.com/nitro"class="text-gray-400 no-underline hover:underline">Nitro</a>
+    <a href="https://discordstatus.com/" class="text-gray-400 no-underline hover:underline">Status</a>
+    </div>
+    <div class="flex flex-col">
+      <p class="text-blue-600">Company</p>
+      <a href="https://discord.com/company" class="text-gray-400 no-underline hover:underline">About</a>
+      <a href="https://discord.com/careers" class="text-gray-400 no-underline hover:underline">jobs</a>
+      <a href="https://discord.com/branding" class="text-gray-400 no-underline hover:underline">Branding</a>
+      <a href="https://discord.com/newsroom" class="text-gray-400 no-underline hover:underline">Newsroom</a>
+    </div>
+    
+  
+    <div class="flex flex-col">
+      <p class="text-blue-600">Resources</p>
+      <a href="https://discord.com/college" class="text-gray-400 no-underline hover:underline">college</a>
+      <a href="https://support.discord.com/hc/en-us" class="text-gray-400 no-underline hover:underline">Support</a>
+      <a href="https://discord.com/safetycenter" class="text-gray-400 no-underline hover:underline">Safety</a>
+      <a href="https://discord.com/blog" class="text-gray-400 no-underline hover:underline">Blog</a>
+      <a href="https://support.discord.com/hc/en-us/community/topics" class="text-gray-400 no-underline hover:underline">Feedback</a>
+      <a href="https://discord.com/build" class="text-gray-400 no-underline hover:underline">Developer</a>
+      <a href="https://discord.com/streamkit" class="text-gray-400 no-underline hover:underline">Streamkit</a>
+      <a href="https://discord.com/creators" class="text-gray-400 no-underline hover:underline">Creater</a>
+      <a href="https://discord.com/community" class="text-gray-400 no-underline hover:underline">Community</a>
+    </div>
+      <div class="flex flex-col">
+        <p class="text-blue-600">Polices</p>
+        <a href="https://discord.com/terms" class="text-gray-400 no-underline hover:underline">Terms</a>
+        <a href="https://discord.com/privacy" class="text-gray-400 no-underline hover:underline">Privacy</a>
+        <a href="https://discord.com/" class="text-gray-400 no-underline hover:underline">Cookie setting</a>
+        <a href="https://discord.com/guidelines" class="text-gray-400 no-underline hover:underline">Guidelines</a>
+        <a href="https://discord.com/acknowledgements" class="text-gray-400 no-underline hover:underline">Acknowledgements</a>
+        <a href="https://discord.com/licenses" class="text-gray-400 no-underline hover:underline">licenses</a>
+        <a href="https://discord.com/moderation" class="text-gray-400 no-underline hover:underline">Moderation</a>
+      </div>
+      </div>
+ 
+
+    <hr class=" border-blue-700 py-4">
+
+
+    <div class="flex lg:flex-row justify-between">
+       <img src="./images/logo second.png" alt="">
+       <button class="text-white bg-blue-700 rounded-full  lg:w-40"><a href="https://discord.com/register">Open discord</a></button>
+    </div>
+   </div>
+
+
+
+   <div class="bg-zinc-800 block lg:hidden">
+    <div class="px-20 py-9">
+      <h3 class="text-blue-700 text-xl">IMAGINE A PLACE</h3>
+      <br>
+      <select>
+       <option value="us" >United States  English</option>
+       <option value="ca" >Canada English, French</option>
+       <option value="mx" >Mexico  Spanish</option>
+       <!-- Add more options for other countries here -->
+       </select>
+       <div class="flex flex-row justify-start pt-2">
+           <img src="./images/social media icon/twitter-color-icon.svg" alt="" class="a10"> 
+           <img src="./images/social media icon/black-instagram-icon.svg" alt="" class="a10 ml-4" >
+           <img src="./images/social media icon/facebook-square-icon.svg" alt="" class="a10 ml-4">
+           <img src="./images/social media icon/black-and-white-youtube-icon.svg" alt="" class="a10 ml-4">
+       </div>
+   </div>
+  <div class="flex flex-row justify-around ">
+    <div class="flex flex-col pl-6">
+      <p class="text-blue-600">Product</p>
+      <a href="https://discord.com/download" class="text-gray-400 no-underline hover:underline">Download</a>
+      <a href="https://discord.com/nitro"class="text-gray-400 no-underline hover:underline">Nitro</a>
+      <a href="https://discordstatus.com/" class="text-gray-400 no-underline hover:underline">Status</a>
+      </div>
+      <div class="flex flex-col ">
+        <p class="text-blue-600">Company</p>
+        <a href="https://discord.com/company" class="text-gray-400 no-underline hover:underline">About</a>
+        <a href="https://discord.com/careers" class="text-gray-400 no-underline hover:underline">jobs</a>
+        <a href="https://discord.com/branding" class="text-gray-400 no-underline hover:underline">Branding</a>
+        <a href="https://discord.com/newsroom" class="text-gray-400 no-underline hover:underline">Newsroom</a>
+      </div>
+      </div>
+      <div class="flex flex-row justify-around ">
+        <div class="flex flex-col pl-12">
+          <p class="text-blue-600">Resources</p>
+          <a href="https://discord.com/college" class="text-gray-400 no-underline hover:underline">college</a>
+          <a href="https://support.discord.com/hc/en-us" class="text-gray-400 no-underline hover:underline">Support</a>
+          <a href="https://discord.com/safetycenter" class="text-gray-400 no-underline hover:underline">Safety</a>
+          <a href="https://discord.com/blog" class="text-gray-400 no-underline hover:underline">Blog</a>
+          <a href="https://support.discord.com/hc/en-us/community/topics" class="text-gray-400 no-underline hover:underline">Feedback</a>
+          <a href="https://discord.com/build" class="text-gray-400 no-underline hover:underline">Developer</a>
+          <a href="https://discord.com/streamkit" class="text-gray-400 no-underline hover:underline">Streamkit</a>
+          <a href="https://discord.com/creators" class="text-gray-400 no-underline hover:underline">Creater</a>
+          <a href="https://discord.com/community" class="text-gray-400 no-underline hover:underline">Community</a>
+        </div>
+          <div class="flex flex-col pl-9">
+            <p class="text-blue-600">Polices</p>
+            <a href="https://discord.com/terms" class="text-gray-400 no-underline hover:underline">Terms</a>
+            <a href="https://discord.com/privacy" class="text-gray-400 no-underline hover:underline">Privacy</a>
+            <a href="https://discord.com/" class="text-gray-400 no-underline hover:underline">Cookie setting</a>
+            <a href="https://discord.com/guidelines" class="text-gray-400 no-underline hover:underline">Guidelines</a>
+            <a href="https://discord.com/acknowledgements" class="text-gray-400 no-underline hover:underline">Acknowledgements</a>
+            <a href="https://discord.com/licenses" class="text-gray-400 no-underline hover:underline">licenses</a>
+            <a href="https://discord.com/moderation" class="text-gray-400 no-underline hover:underline">Moderation</a>
+          </div>
+      </div>
+      <hr class="border-blue-600 px-12" >
+      <div class="flex flex-col">
+        <img class="mx-auto" src="./images/logo second.png" alt="" class="img1">
+        <button class=" mx-12 text-white bg-blue-700 rounded-full  lg:w-40"><a href="https://discord.com/register">Open discord</a></button>
+
+      </div>
+   </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
